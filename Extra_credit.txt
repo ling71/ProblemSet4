@@ -1,0 +1,39 @@
+Extra credit question
+
+Gainesville-temperature.csv
+
+This file contains daily temperature data for the city of Gainesville for the first half year (6 months) of 2018 and 2017
+
+The columns in the dataset are in the table below.
+
+Column header | Description
+--------------|------------
+Date | The date information
+High_2018 | Daily high temperature of the date in 2018
+Low_2018 | Daily low temperature of the date in 2018
+High_2017 | Daily high temperature of the date in 2017
+Low_2017 | Daily low temperature of the date in 2017
+
+
+For this dataset, I want to compare the daily high and low temperature for the same date in year 2017 and 2018 to see whether there is a climate change.
+I will break down the data into two tables for high temperature comparison data and low temperature comparison.
+
+1st Table - High_temperature_comparison:
+This table will provide the the comparison of daily high temperature between year 2017 and 2018.
+Date (integer) primary key
+High_2017 (float)
+High_2018 (float)
+
+
+2nd Table - Low_temperature_comparison:
+This table will provide the the comparison of daily low temperature between year 2017 and 2018.
+Date (integer) foreign key
+Low_2017 (float)
+Low_2018 (float)
+
+
+Primary key: DAte
+Date is unique for the first table, which are the year numbers from 1900 to 2017.
+
+Foreign key: Date
+Date is also unique for the second table and is also shared between both tables. 

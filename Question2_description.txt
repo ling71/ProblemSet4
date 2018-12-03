@@ -1,0 +1,28 @@
+I want to break down the data into two tables for annual rainfall data and monthly raifnall data.
+
+1st Table - Annual_rainfall:
+This table will provide annual rainfall data and the associated year number.
+Year (integer) primary key
+Annual (float)
+
+2nd Table - Monthly_rainfall:
+This table will provide the monthly rainfall data for 12 months and the associated year.
+Year (integer) foreign key
+Jan (float)
+Feb (float)
+Mar (float)
+Apr (float)
+May (float)
+Jun (float)
+Jul (float)
+Aug (float)
+Sep (float)
+Oct (float)
+Nov (float)
+Dec (float)
+
+Primary key: Year
+Year is unique for the first table, which are the year numbers from 1900 to 2017.
+
+Foreign key: Year
+Year is unique for the second table and is also shared between both tables. 
